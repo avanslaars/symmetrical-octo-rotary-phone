@@ -35,7 +35,6 @@ class App extends Component {
     // gun.get('whatever').put({candy: 'llama'}, function(err){ console.log("did we make it here?", err) });
     todoData.path(counter).put(newItem)
     counter++
-    
     this.setState({
       currentInput: ''
     })
