@@ -32,7 +32,6 @@ class App extends Component {
 
   handleClick() {
     const newItem = this.state.currentInput
-    // gun.get('whatever').put({candy: 'llama'}, function(err){ console.log("did we make it here?", err) });
     todoData.path(counter).put(newItem)
     counter++
     this.setState({
@@ -45,7 +44,7 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+          <h2>Welcome to React on Now</h2>
         </div>
         <input type='text' onInput={this.handleInput} value={this.state.currentInput}/>
         <button onClick={this.handleClick}>Cleeek!</button>
